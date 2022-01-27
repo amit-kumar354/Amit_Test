@@ -47,6 +47,7 @@ view: orders {
 
   measure: count {
     type: count
+    html: <b> {{linked_value}}  </b> ;;
     drill_fields: [detail*]
   }
 
