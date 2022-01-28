@@ -1,9 +1,9 @@
 # The name of this view in Looker is "Orders"
 view: orders {
+  drill_fields: [detail*]
   # The sql_table_name parameter indicates the underlying database table
   # to be used for all fields in this view.
   sql_table_name: demo_db.orders ;;
-  drill_fields: [id]
   # This primary key is the unique key for this table in the underlying database.
   # You need to define a primary key in a view in order to join to other views.
 
@@ -47,8 +47,7 @@ view: orders {
 
   measure: count {
     type: count
-    html: <b> {{linked_value}}  </b> ;;
-    drill_fields: [detail*]
+    html:<b>{{linked_value}}</b>;;
   }
 
   # ----- Sets of fields for drilling ------
