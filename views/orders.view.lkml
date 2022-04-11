@@ -30,6 +30,10 @@ view: orders {
     sql: ${TABLE}.created_at ;;
   }
 
+  dimension: liquid_date {
+    sql: ${created_date} ;;
+    html: {{ rendered_value | date: "%d.%m.%y" }} ;;
+  }
   # Here's what a typical dimension looks like in LookML.
   # A dimension is a groupable field that can be used to filter query results.
   # This dimension will be called "Status" in Explore.
