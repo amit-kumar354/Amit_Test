@@ -37,6 +37,11 @@ view: orders {
   dimension: status {
     type: string
     sql: ${TABLE}.status ;;
+    link: {
+    label: "drill"
+    url: "https://dcl.dev.looker.com/dashboards/2222"
+    }
+
   }
 
   dimension: user_id {
