@@ -1,5 +1,5 @@
 - dashboard: dash_lookml
-  title: dash_lookml
+  title: dashlook
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
