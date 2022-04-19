@@ -1,4 +1,4 @@
-- dashboard: dash_lookml
+- dashboard: dash_look
   title: dashlook
   layout: newspaper
   preferred_viewer: dashboards-next
