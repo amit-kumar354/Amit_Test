@@ -69,4 +69,14 @@ view: order_items {
     type: count
     drill_fields: [id, orders.id, inventory_items.id]
   }
+
+  measure: counthtml {
+    type: count
+    drill_fields: [id, order_items.count, order_items.counthtml]
+    html: {% if value >= 10 %}
+      <font style="color:#D60A15">{{rendered_value}}</font>
+      {% endif %};;
+  }
+
+
 }
